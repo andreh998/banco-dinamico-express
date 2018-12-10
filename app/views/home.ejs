@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Home </title>
+    <link rel="stylesheet" href="http://localhost:8000/css/bootstrap.min.css" />
+</head>
+<body>
+    
+    <div class="container">
+
+        <form class="col-sm-5 offset-md-3" action="/" method="post">
+
+            <div class="form-group">
+                <label for="tipobanco">Tipo de Banco</label>
+                <select name="tipobanco" class="form-control">
+                    <option value="mysql">Mysql</option>
+                    <option value="postgresql">PrestgreSQL</option>
+                </select>                            
+            </div>
+            
+            <div class="form-group">
+                <label for="">Host</label>
+                <input class="form-control" type="text" name="host" placeholder="Host">
+            </div>
+
+            <div class="form-group">
+                <label for="">Database</label>
+                <input class="form-control" type="text" name="database" placeholder="Database">
+            </div>
+
+            <div class="form-group">
+                <label for="">Usuário</label>
+                <input class="form-control" type="text" name="usuario" placeholder="Usuário">
+            </div>
+
+            <div class="form-group">
+                <label for="">Senha</label>
+                <input class="form-control" type="password" name="senha" placeholder="******">
+            </div>
+
+            <button class="btn btn-primary" type="submit"> Trazer tabelas </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
