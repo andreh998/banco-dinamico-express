@@ -26,8 +26,7 @@ module.exports = function(){
             var pool = databaseDinamico;
             //console.log(pool);
             //return pool.query('SELECT * FROM usuarios', retorno);            
-            return pool.query('SELECT table_name FROM information_schema.tables WHERE table_schema=\'public\' AND table_type=\'BASE TABLE\';', retorno);
-            
+            return pool.query('SELECT table_name FROM information_schema.tables WHERE table_schema=\'public\' AND table_type=\'BASE TABLE\';', retorno);            
 
         }
         

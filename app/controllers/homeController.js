@@ -22,6 +22,15 @@ module.exports.buscar = function(req, res){
             return;
         } else {
             if(!erro){
+                /*
+                if(dados.tipoBanco == 'postgresql'){
+                    console.log(resultado.rows);    
+                    res.redirect('/');            
+                } else if(dados.tipoBanco == 'mysql'){
+                    console.log(resultado);
+                    res.redirect('/');
+                }
+                */
                 console.log(resultado);
                 res.redirect('/');
             } else {
