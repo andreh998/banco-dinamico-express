@@ -31,3 +31,11 @@ UPDATE usuarios SET nome = 'André Hoffmann'
 WHERE email = 'andre@mail.com';
 
 SELECT * FROM usuarios;
+
+
+CREATE TABLE IF NOT EXISTS produtos(
+	id SERIAL PRIMARY KEY,
+    nome VARCHAR(60) NOT NULL,
+	custo NUMERIC(10,2) NOT NULL,
+    unidade_medida VARCHAR(5) NOT NULL  
+);
